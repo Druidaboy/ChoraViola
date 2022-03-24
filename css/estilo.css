@@ -1,0 +1,243 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#container{
+    border: solid 2px red;
+	margin: auto;
+	width: 1200px;
+    position: relative;
+}
+.clear{
+	clear: both;
+}
+#topo{
+	border: 3px solid blue;
+	background: orange;
+	height: 170px;
+}
+#logo{
+	background: url(../Imagens/logo01.png);
+	width: 220px;
+	height: 148px;
+	float: left;
+	margin: 10px;
+	border-radius: 15px;
+}
+#menu{
+	border: 1px solid black;
+	margin: auto;
+	width: 741px;
+}
+ul{
+	margin: auto;
+	padding: 10px;
+	list-style: none;
+	width: 741px;
+	background: #159cb0 url(../imagens/fundo-horizontal.png) repeat-x;
+	float: left;
+}
+ul li{
+	float: left;
+}
+ul a{
+	display: block;
+	padding: 0 2em;
+	line-height: 2em;
+	text-decoration: none;
+	color: #fff;
+	background: url(../imagens/divisor.png) repeat-y left top;
+}
+ul .primeiro a{
+	background: none;
+}
+ul a:hover{
+	color: #085662;
+	background: #44cade;
+}
+#home .home a, #galeria .galeria a, #noticias .noticias a, #contato .contato a, #quemsomos .quemsomos a, #institucional 
+.institucional a{	
+	color: #085662;
+	background: #44cade;
+}
+
+/* Checkbox personalizada */
+
+select{
+    min-width: 80px;
+    min-height: 35px;
+    font-size: 24px;
+}
+
+.marcador{
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.marcador input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.check{
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background: #ccc;
+    position: absolute;
+    border-radius: 25px;
+}
+
+.marcador input:checked ~ .check{
+    background: green;
+}
+
+.marcador .check:after{
+    top: -5px;
+    left: 15px;
+    width: 20px;
+    height: 35px;
+    border: solid blue;
+    border-width: 0 15px 10px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.check:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.marcador input:checked ~ .check:after{
+    display: block;
+}
+
+/* Cardápio */
+
+fieldset{
+    font-size: 24px;
+    margin-top: 15px;
+    border: 3px solid black;
+}
+
+.produto01{
+   border: 3px solid blue;
+   width: 200px;
+   margin: 11px;
+   padding: 5px;
+   height: 200px;
+   float: left;
+}
+
+.produto01b{
+    float: left;
+    padding-left: 15px;
+}
+
+.produto01a{
+    float: right;
+    padding-left: 55px;
+}
+
+/* Tabela */
+
+table{
+    background-color: green;
+    border: solid 1px green;
+}
+
+/* Botões */
+
+.botao01{
+    width: 120px;
+    height: 45px;
+    float: right;
+    margin: 15px 25px 1px 25px;
+    border-radius: 10px;
+    background-color: #F8E0E0;
+}
+
+.botao01:hover{
+    background-color: #159cb0;
+}
+
+.botao-topo{
+    margin-left: 50%;
+    width: 125px;
+    height: 35px;
+    background-color: green;
+    border-radius: 5px;
+}
+
+.botao-salvar{
+    margin-left: 3%;
+    width: 125px;
+    height: 35px;
+    background-color: green;
+    border-radius: 5px;
+}
+
+/* Rodapé */
+
+#rodape{
+    clear: both;
+    height: 45px;
+    margin-top: 80px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+#rodape01{
+    padding: 15px;
+}
+
+/* Pedido01.php */
+
+/* Estilizando a tabela */
+
+table{
+    clear: both;
+    margin: 65px auto 15px;
+    font-size: 28px;
+    border: 1px solid black;
+    padding: 25px;
+}
+
+#larg-tab01{
+    width: 300px;
+}
+
+#larg-tab02{
+    width: 100px;    
+    text-align: right;
+}
+
+td{    
+    text-align: right;
+}
+
+/* Código Impressora*/
+
+@media print {
+  /* esconder tudo */
+  body * {
+    visibility: hidden;
+  }
+  /* exibir somente o que tem na div para imprimir */
+  #imprimir, #imprimir * {
+    visibility: visible;
+  }
+  #imprimir {
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  
+}
